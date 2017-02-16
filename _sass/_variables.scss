@@ -4,8 +4,8 @@
 //
 
 // Colors
-$blue: #4183C4;
-
+$blue: #74a6d6;
+$pink: #eab8bc;
 // Grays
 $black: #000;
 $darkerGray: #222;
@@ -13,15 +13,21 @@ $darkGray: #333;
 $gray: #666;
 $lightGray: #eee;
 $white: #fff;
+$background: #0c2433;
+$darkBlue: $background;
+
+$dark-blue: #030915;
+$light-gray: #c7ccd6;
+$yellow: #c0a364;
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 
-// Mobile breakpoints
-@mixin mobile {
-  @media screen and (max-width: 640px) {
+// Tablet breakpoints
+@mixin tablet {
+  @media screen and (min-width: 700px) {
     @content;
   }
 }
