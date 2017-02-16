@@ -102,10 +102,6 @@ img {
   max-width: 100%;
 }
 
-.entry {
-  max-width: 600px;
-}
-
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
@@ -139,7 +135,7 @@ img {
     justify-content: space-between;
     margin-bottom: 0;
     height: 100vh;
-    background-color: #142A39;
+    background-color: $white;
   }
 }
 
@@ -152,6 +148,7 @@ img {
   @include tablet {
     display: block;
     margin-bottom: 15px;
+    color: $black;
   }
 }
 
@@ -173,6 +170,27 @@ nav {
 
 }
 
+.read-more {
+  font-family: $georgia;
+}
+
+.page {
+  max-width: 600px;
+  color: $white;
+}
+
+.post {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  color: white;
+
+  h1,
+  .date {
+    color: $blue;
+    font-family: $georgia;
+  }
+}
+
 #main {
   a:visited {
     color: $blue;
@@ -183,8 +201,4 @@ nav {
     float: right;
     padding: 0 20px;
   }
-}
-
-.page {
-  color: $white;
 }
