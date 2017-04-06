@@ -20,40 +20,18 @@ html {
 body {
 	background: $background;
   font: 18px/1.4 $helvetica;
-  color: $dark-blue;
-  font-weight: 300;
+  color: white;
+  letter-spacing: 0.5px;
 }
 
 .container {
-  margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 10px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: inherit;
-
-  line-height: 1.4;
-  margin: 1em 0 15px;
+  margin: 0;
   padding: 0;
-}
-
-h1 {
-  font-size: 30px;
-}
-
-h2 {
-  font-size: 24px;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-h4 {
-  font-size: 18px;
-  color: $gray;
 }
 
 p {
@@ -61,7 +39,7 @@ p {
 }
 
 a {
-  color: $pink;
+  color: $blue;
   text-decoration: none;
 	cursor: pointer;
   &:active {
@@ -117,88 +95,45 @@ img {
   background: $lightGray;
 }
 
-
-.header {
-  height: 60px;
-  padding-top: 10px;
-
-
-  @include tablet {
-    position: fixed;
-    overflow-y: scroll;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 0;
-    height: 100vh;
-    background-color: $white;
-  }
+.main {
+  margin-top: 50px;
 }
 
 .logo {
-  font-size: 2em;
-  color: $white;
-  display: inline-block;
-  margin-right: 15px;
+  width: 80px;
+  margin: 16px auto;
+  display: block;
+}
 
-  @include tablet {
-    display: block;
-    margin-bottom: 15px;
-    color: $black;
+.about {
+  margin-bottom: 40px;
+}
+
+.home-h1 {
+  font-size: 20px;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 390px) {
+    text-align: center;
   }
 }
 
-nav {
-  font-family: $helveticaNeue;
-  font-size: 18px;
-  display: inline-block;
-
-  a {
-    font-weight: 300;
-    letter-spacing: 1px;
-    height: 38px;
-    margin-right: 15px;
-
-    @include tablet {
-      display: block;
-    }
-  }
-
+.home-h2 {
+  font-size: 14px;
+  max-width: 370px;
+  margin: 0 auto;
 }
 
-.read-more {
-  font-family: $georgia;
+.posts__headline {
+  border-bottom: 1px solid;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
-.page {
-  max-width: 600px;
-  color: $white;
-}
-
-.post {
-  max-width: 800px;
-  margin: 0 auto 30px;
-  color: white;
-
-  h1,
-  .date {
-    color: $blue;
-    font-family: $georgia;
-  }
-}
-
-#main {
-  a:visited {
-    color: $blue;
-  }
-
-  @include tablet {
-    width: calc(100vw - 200px);
-    float: right;
-    padding: 0 20px;
-  }
+.post-preview__headline,
+.post h1 {
+  font-family: Georgia;
 }

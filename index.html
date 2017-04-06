@@ -2,17 +2,25 @@
 layout: default
 ---
 
+<div class="about">
+  <h1 class="home-h1">Hi, my name is Matthias Hoyer<br/><a href="https://www.stylight.de">Website Tech Lead at Stylight</a>
+  </h1>
+  <h2 class="home-h2">
+    I co-founded <a href="http://www.ammazing.de">Ammazing</a> &amp; <a href="http://www.designmadeingermany.de/2011/26623/"/>Temp Magazine</a>.
+    Before that I studied Media Informatics at <a href="http://www.medien.ifi.lmu.de">LMU</a> &amp;
+    <a href="https://www.bmwgroup.com/de.html?http://www.bmwgroup.com/d/0_0_www_bmwgroup_com/forschung_entwicklung/menschen_netzwerke/innovationsnetzwerk/forschung_technik/forschung_technik.html">BMW</a>.
+    Feel free to contact me under matthias[at]hoyer.io
+  </h2>
+</div>
+<!--
 <div class="posts">
+  <div class="posts__headline">
+    Ideas
+  </div>
   {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    <article class="post-preview">
+      <h3 class="post-preview__headline"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
     </article>
   {% endfor %}
 </div>
+-->
