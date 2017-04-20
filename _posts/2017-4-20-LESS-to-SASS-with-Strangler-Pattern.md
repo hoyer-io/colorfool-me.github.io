@@ -19,7 +19,7 @@ Transferred to the programming world this means: Instead of rewriting the monoli
 
 So I started wondering if this could also be helpful to switch from LESS to SASS in the frontend stack. My idea looked like this:
 
-![_config.yml]({{ site.baseurl }}/images/strangler-pattern-less-to-sass.jpg)
+![_config.yml]({{ site.baseurl_images }}/images/strangler-pattern-less-to-sass.jpg)
 
 In words: The LESS architecture is our host and the freshly added SASS architecture our strangler.
 
