@@ -29,6 +29,6 @@ With this approach we get a blank slate for our SASS architecture. What a great 
 While the approach helped our website team to switch to SASS easily without blocking one or two sprints, we also found some points to consider:
 - **Two at a time:** You will have to support two technologies side by side for a while. To switch from LESS to SASS this is easy, since nothing happens at runtime. For other technologies or tools this might not be the case.
 - **Don’t be lazy:** You must build new features with the new technology, otherwise the final switch will never happen.
-- **The final step:** Not every component of the CSS gets constantly rewritten, especially basics like the grid. Don't be restless, use the pattern until the LESS-rest is small enough to tackle in a regular ticket.
+- **The final step:** Not every component of the CSS gets constantly rewritten, especially basics like the grid. Use the pattern until the LESS-rest is small enough to tackle in a regular ticket.
 
 The approach is definitely not a silver bullet for all technology switches, but to make the transition from LESS to SASS it works really well. It enables you to keep your tech stack up to date without sacrificing too much time. And in case you run into unconsidered problems with the new technology, switching back is easy at any point of time.
